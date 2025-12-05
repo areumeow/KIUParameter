@@ -47,13 +47,6 @@ const ArtworkCard: React.FC<ArtworkCardProps> = ({ artwork, onClick }) => {
       videoRef.current.currentTime = 0;
       videoRef.current.play().catch(e => console.error("Autoplay prevented", e));
       
-      // Stop after 5 seconds (preview mode)
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      timeoutRef.current = window.setTimeout(() => {
-        if (videoRef.current) {
-          videoRef.current.pause();
-        }
-      }, 5000); 
     }
   };
 
@@ -98,13 +91,12 @@ const ArtworkCard: React.FC<ArtworkCardProps> = ({ artwork, onClick }) => {
             />
 
             {/* Video Preview */}
-            <iframe 
-                // 💡 previewVideoUrl이 미니멀 옵션 주소를 사용해야 합니다.
-                src={artwork.previewVideoUrl}
-                frameBorder="0"
-                allow="autoplay"
-                allowFullScreen
-                // YouTube Embed는 클래스만으로는 스타일이 깔끔해지지 않으므로, URL 옵션을 사용해야 합니다.
+            <video 
+                ref={videoRef}
+                src={artwork.previewVideoUrl} // 혹은 artwork.previewVideoUrl
+                muted
+                playsInline
+                loop={true} // 🌟🌟🌟 이 부분을 true로 변경하거나 loop만 추가 🌟🌟🌟
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
             />
 
