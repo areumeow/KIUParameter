@@ -98,14 +98,13 @@ const ArtworkCard: React.FC<ArtworkCardProps> = ({ artwork, onClick }) => {
             />
 
             {/* Video Preview */}
-            {/* ❌ video 태그 지우고 iframe으로 교체! */}
             <iframe 
-                // 💡 미리보기용 주소인 previewVideoUrl을 사용합니다.
+                // 💡 previewVideoUrl이 미니멀 옵션 주소를 사용해야 합니다.
                 src={artwork.previewVideoUrl}
                 frameBorder="0"
                 allow="autoplay"
                 allowFullScreen
-                // 유튜브 플레이어 스타일을 숨기기 위해 클래스 추가 (필수)
+                // YouTube Embed는 클래스만으로는 스타일이 깔끔해지지 않으므로, URL 옵션을 사용해야 합니다.
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
             />
 
