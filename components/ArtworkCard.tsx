@@ -91,24 +91,26 @@ const ArtworkCard: React.FC<ArtworkCardProps> = ({ artwork, onClick }) => {
             />
 
             {/* Video Preview */}
-            <video 
-                ref={videoRef}
-                src={artwork.previewVideoUrl} // 혹은 artwork.previewVideoUrl
-                muted
-                playsInline
-                loop={true} // 🌟🌟🌟 이 부분을 true로 변경하거나 loop만 추가 🌟🌟🌟
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
-            />
 
-            {/* Glossy Reflection Gradient (Glassmorphism) */}
-            <div 
-                className="absolute inset-0 pointer-events-none mix-blend-soft-light"
-                style={{
-                    background: isHovered 
-                        ? `radial-gradient(circle at ${glarePosition.x}% ${glarePosition.y}%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 80%)`
-                        : 'linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.1) 100%)'
-                }}
-            />
+{/* ❌ video 태그 지우고 iframe으로 교체! */}
+
+<iframe
+
+// 💡 미리보기용 주소인 previewVideoUrl을 사용합니다.
+
+src={artwork.previewVideoUrl}
+
+frameBorder="0"
+
+allow="autoplay"
+
+allowFullScreen
+
+// 유튜브 플레이어 스타일을 숨기기 위해 클래스 추가 (필수)
+
+className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+
+/>
             
             {/* Info Overlay on Hover - Monochrome */}
             <div className="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
