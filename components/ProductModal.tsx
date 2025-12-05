@@ -61,15 +61,14 @@ const ProductModal: React.FC<ProductModalProps> = ({ artwork, isOpen, onClose, i
 
         {/* Left: Video Area */}
         <div className="w-full md:w-2/3 bg-black flex items-center justify-center relative group shrink-0">
-          <video 
-            // ❌ artwork.videoUrl 대신 previewVideoUrl 사용
-            src={artwork.previewVideoUrl} 
-            autoPlay 
-            muted 
-            loop 
-            controls
-            className="w-full h-full object-contain max-h-[40vh] md:max-h-[70vh]"
-          />
+         <iframe
+  src={artwork.previewVideoUrl} // 혹은 artwork.videoUrl (데이터에 따라 맞춤)
+  className="w-full h-full aspect-video"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
         </div>
 
         {/* Right: Info Area (Sidebar Style) */}
