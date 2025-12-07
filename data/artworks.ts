@@ -16,7 +16,7 @@ export const artworks: Artwork[] = [
   // SongSeungHaw (3 works)
   {
     id: 's1',
-    artist: 'SongSeungHaw',
+    artist: 'SongSeungHwa',
     title: 'Phase Shift',
     description: '감정은 어느 순간 갑자기 방향을 바꾼다. 형태가 뒤틀리며 흔들리는 이 흐름은, 내면이 지금까지의 상태에서 새로운 감정으로 이동하기 직적의 불안정한 전환점을 담고 있다.',
     thumbnailUrl: '/KIUParameter/001.jpg',
@@ -24,12 +24,12 @@ export const artworks: Artwork[] = [
     previewVideoUrl: 'https://www.youtube.com/embed/O0yH4JTzcig?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=O0yH4JTzcig' ,
     duration: '00:30',
     format: 'MP4 / 1280*1280',
-    bankName: 'KB Kookmin Bank',
-    accountNumber: '1111-22-3333333',
+    bankName: 'Toss Bank',
+    accountNumber: '1000-0459-0524',
   },
   {
     id: 's2',
-    artist: 'SongSeungHaw',
+    artist: 'SongSeungHwa',
     title: 'Tranasition Flow',
     description: '감정은 서로 밀어내며 자연스러운 흐름을 만들어낸다. 갑작스러운 변화와 느린 이동이 뒤섞인 장면 속에서 우리는 감정이 고정된 것이 아니라 끊임없이 이동하는 유동적인 상태임을 깨닫게된다.',
     thumbnailUrl: '/KIUParameter/002.jpg',
@@ -37,12 +37,12 @@ export const artworks: Artwork[] = [
     previewVideoUrl: 'https://www.youtube.com/embed/dCJYAueyKYI?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=dCJYAueyKYI' ,
     duration: '00:30',
     format: 'MP4 / 1280*1280',
-    bankName: 'KB Kookmin Bank',
-    accountNumber: '1111-22-3333333',
+    bankName: 'Toss Bank',
+    accountNumber: '1000-0459-0524',
   },
   {
     id: 's3',
-    artist: 'SongSeungHaw',
+    artist: 'SongSeungHwa',
     title: 'Settle Down',
     description: '격한 움직임이 지나가면 감정은 천천히 가라 앉는다. 부서지던 흔적이 정리되고, 흐트러진 파동이 하나의 결로 모여들며 감정이 새로운 균형을 찾아가는 과정을 담았다.',
     thumbnailUrl: '/KIUParameter/003.jpg',
@@ -50,8 +50,8 @@ export const artworks: Artwork[] = [
     previewVideoUrl: 'https://www.youtube.com/embed/oUoegmkARXQ?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=oUoegmkARXQ' ,
     duration: '00:30',
     format: 'MP4 / 1280*1280',
-    bankName: 'KB Kookmin Bank',
-    accountNumber: '1111-22-3333333',
+    bankName: 'Toss Bank',
+    accountNumber: '1000-0459-0524',
   },
 
   // JangMyu (3 works)
@@ -65,8 +65,8 @@ export const artworks: Artwork[] = [
     previewVideoUrl: 'https://www.youtube.com/embed/bRbFQzJ90S0?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=bRbFQzJ90S0' ,
     duration: '00:45',
     format: 'MOV / 1280p',
-    bankName: 'KB Kookmin Bank',
-    accountNumber: '1111-22-3333333',
+    bankName: 'Toss Bank',
+    accountNumber: '1000-3945-7632',
   },
   {
     id: 'j2',
@@ -78,8 +78,8 @@ export const artworks: Artwork[] = [
     previewVideoUrl: 'https://www.youtube.com/embed/XI1k1uzF9Wc?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=XI1k1uzF9Wc' ,
     duration: '00:40',
     format: 'MOV / 1280p',
-    bankName: 'KB Kookmin Bank',
-    accountNumber: '1111-22-3333333',
+    bankName: 'Toss Bank',
+    accountNumber: '1000-3945-7632',
   },
   {
     id: 'j3',
@@ -91,8 +91,8 @@ export const artworks: Artwork[] = [
     previewVideoUrl: 'https://www.youtube.com/embed/b2-LyjxM7ic?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=b2-LyjxM7ic' ,
     duration: '00:41',
     format: 'MOV / 1280p',
-    bankName: 'KB Kookmin Bank',
-    accountNumber: '1111-22-3333333',
+    bankName: 'Toss Bank',
+    accountNumber: '1000-3945-7632',
   },
 
   // JeongAreum (3 works)

@@ -52,7 +52,7 @@ const Gallery: React.FC<GalleryProps> = ({ onArtworkSelect, likedIds, recentIds 
     }
   };
 
-  const artists = ['SongSeungHaw', 'JangMyu', 'JeongAreum'];
+  const artists = ['SongSeungHwa', 'JangMyu', 'JeongAreum'];
 
   return (
     <section id="gallery" className="w-full relative z-20 pb-32 pt-10 px-2 md:px-0 bg-transparent flex justify-center">
